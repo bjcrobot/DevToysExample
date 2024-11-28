@@ -1,0 +1,20 @@
+{
+  "profiles": {
+    "DevToys GUI": {
+      "commandName": "Executable",
+      "executablePath": "%DevToysGuiDebugEntryPoint%",
+      "environmentVariables": {
+        "EXTRAPLUGIN": "$(TargetDir)"
+      }
+    },
+    "DevToys CLI": {
+      "commandName": "Executable",
+      "executablePath": "%DevToysCliDebugEntryPoint%",
+      "commandLineArgs": "mytool -i aaaa",
+      "environmentVariables": {
+        "EXTRAPLUGIN": "$(TargetDir)"
+      }
+    }
+  },
+  "$schema": "https://json.schemastore.org/launchsettings.json"
+}
