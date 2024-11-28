@@ -36,6 +36,10 @@ internal sealed class MyGuiTool : IGuiTool
             Stack()
                 .Vertical()
                 .WithChildren(
+                    Label()
+                        .Style(UILabelStyle.Display)
+                        .NeverWrap()
+                        .Text(HelloWorld.Properties.Resources.HelloWorldLabel),
                     _button
                         .Text("Click me")
                         .OnClick(OnButtonClick),
